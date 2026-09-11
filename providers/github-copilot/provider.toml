@@ -1,3 +1,8 @@
+# Cache key (chat): supported-auto prefix cache; authenticated GET `/models` metadata drives per-model controls; chat requests reuse stable prefix on same model plus conversation.
+# Cache headers: stable prefix routing with same model plus conversation.
+# Cache policy: automatic prefix caching; keep stable prefix on same model plus conversation; 5-minute TTL with keepalive-friendly cadence.
+# Cache verification: cached-input with cache-write billing rates.
+# Docs: https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing
 name = "GitHub Copilot"
 # Reasoning HTTP format (accessed 2026-06-25): POST /chat/completions.
 # Supported controls and values come from authenticated GET /models metadata

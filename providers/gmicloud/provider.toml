@@ -1,3 +1,8 @@
+# Cache key (chat): unknown chat cache key; POST `/v1/chat/completions` carries model plus messages plus tools plus sampling fields; org routing via `X-Organization-ID`.
+# Cache headers: org routing via `X-Organization-ID`; stable prefix routing with same model.
+# Cache policy: unknown prefix behavior; keep stable prefix first for server-side vLLM plus SGLang prefix reuse.
+# Cache verification: usage prompt plus completion plus total.
+# Docs: https://docs.gmicloud.ai/inference-engine/api-reference/llm-api-reference
 name = "GMI Cloud"
 # Reasoning HTTP format (accessed 2026-06-25): POST /v1/messages for Claude.
 # Native Messages uses thinking = { type = "enabled", budget_tokens = N };

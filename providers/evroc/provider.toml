@@ -1,3 +1,8 @@
+# Cache key (chat): unknown chat cache key; supported params carry model plus messages plus tools plus `response_format` plus `top_p` plus `seed`; catalog cards list context plus output plus capabilities.
+# Cache headers: bearer auth via `Authorization`; stable prefix routing with same model.
+# Cache policy: unknown prefix behavior; keep stable prefix for upstream reuse.
+# Cache verification: usage totals with catalog pricing.
+# Docs: https://docs.evroc.com/products/think/openai-compatibility.html
 name = "evroc"
 # Reasoning HTTP format (accessed 2026-06-25): POST /v1/chat/completions.
 # evroc documents OpenAI compatibility but no toggle, effort, or budget field;

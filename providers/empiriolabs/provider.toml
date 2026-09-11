@@ -1,3 +1,8 @@
+# Cache key (chat): unknown chat cache key; request carries model plus messages plus tools plus `response_format` plus `enable_thinking` plus `thinking_budget`; usage reports prompt plus completion plus total.
+# Cache headers: bearer auth via `Authorization` with `x-api-key` accepted; stable prefix routing with same model.
+# Cache policy: unknown prefix behavior; keep stable prefix on same model for upstream reuse.
+# Cache verification: usage prompt plus completion plus total with implicit-cache-read billing where applicable.
+# Docs: https://docs.empiriolabs.ai/api-reference/api-reference/chat-completions/create-chat-completion.md
 name = "EmpirioLabs AI"
 env = ["EMPIRIOLABS_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

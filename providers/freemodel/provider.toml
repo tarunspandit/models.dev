@@ -1,3 +1,8 @@
+# Cache key (chat): unknown chat cache key; Messages surface POST `/v1/messages` carries model plus messages; provider publishes Anthropic-compatible routing.
+# Cache headers: stable prefix routing with same model.
+# Cache policy: unknown prefix behavior; keep stable prefix on same model for upstream reuse; Anthropic-style `cache_control` breakpoints apply where upstream supports them.
+# Cache verification: provider usage totals with backend reuse where reported.
+# Docs: https://freemodel.dev
 name = "FreeModel"
 # Reasoning HTTP format (accessed 2026-06-25): POST /v1/messages.
 # FreeModel publishes no request schema for toggle, effort, or budget controls;

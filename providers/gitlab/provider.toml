@@ -1,3 +1,8 @@
+# Cache key (chat): unknown chat cache key; Duo proxy carries OpenAI Chat plus Responses plus Anthropic Messages shapes; Anthropic routes use SDK-managed `cache_control` breakpoints.
+# Cache headers: stable prefix routing with same model.
+# Cache policy: unknown prefix behavior; keep stable prefix on same model; trailing-message breakpoints with 20-block lookback on Anthropic routes.
+# Cache verification: provider usage totals with backend reuse where reported.
+# Docs: https://docs.gitlab.com/user/duo_agent_platform/
 # Reasoning controls (sources accessed 2026-09-04):
 # - OpenAI Chat: POST /ai/v1/proxy/openai/v1/chat/completions uses top-level
 #   `reasoning_effort`; Responses: POST /ai/v1/proxy/openai/v1/responses uses

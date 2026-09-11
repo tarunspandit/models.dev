@@ -1,3 +1,8 @@
+# Cache key (chat): Use body `prompt_cache_key` for affinity plus `prompt_cache_isolation_key` for separation; OpenAPI ChatCompletionRequest fields.
+# Cache headers: session affinity via `x-session-affinity` with `user` field; multi-turn stickiness via `x-multi-turn-session-id`; isolation via `x-prompt-cache-isolation-key`.
+# Cache policy: automatic prefix caching enabled by default; keep static prefix first, reuse same `prompt_cache_key` for affinity, change isolation key for separation.
+# Cache verification: cached-prompt-tokens with perf_metrics.
+# Docs: https://docs.fireworks.ai/guides/prompt-caching
 name = "Fireworks AI"
 # Reasoning HTTP format (accessed 2026-06-25): POST /inference/v1/chat/completions.
 # JSON reasoning_effort: "low" | "medium" | "high", or thinking =
