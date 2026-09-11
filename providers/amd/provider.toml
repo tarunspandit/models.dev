@@ -1,3 +1,8 @@
+# Prompt caching (chat): automatic server-side prefix reuse; no client cache control documented
+# Use headers: none.
+# Use body: none.
+# To get a hit: reuse a static prefix with the same model; verify via `usage.prompt_tokens_details.cached_tokens`
+# Docs: https://amd-aim.github.io/radeon-cloud-docs/api/chat-completions/
 name = "AMD"
 env = ["AMD_API_KEY"]
 npm = "@ai-sdk/openai-compatible"
