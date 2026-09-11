@@ -1,3 +1,6 @@
+# Prompt caching (chat): Automatic backend prefix reuse with cache accounting in the OpenAI-format usage block.
+# To get a hit: Keep a stable shared prefix with append-only growth on the same model, confirm via usage cached_tokens plus cache_write_tokens.
+# Docs: https://api.berget.ai/
 name = "Berget.AI"
 env = ["BERGET_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

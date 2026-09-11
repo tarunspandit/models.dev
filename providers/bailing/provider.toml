@@ -1,3 +1,5 @@
+# Prompt caching (chat): OpenAI-compatible chat endpoint serving POST /v1/chat/completions on the selected model; cache behavior follows backing-model prefix reuse.
+# Docs: https://alipaytbox.yuque.com/sxs0ba/ling/intro
 name = "Bailing"
 env = ["BAILING_API_TOKEN"]
 npm = "@ai-sdk/openai-compatible"

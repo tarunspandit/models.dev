@@ -1,3 +1,5 @@
+# Prompt caching (chat): OpenAI-compatible gateway forwarding chat requests to the selected model; cache behavior follows the routed model prefix reuse.
+# Docs: https://bothub.ru/models
 name = "Bothub"
 env = ["BOTHUB_API_KEY"]
 npm = "@ai-sdk/openai-compatible"

@@ -1,3 +1,5 @@
+# Prompt caching (chat): OpenAI-compatible routing gateway forwarding chat requests to the selected healthy operator; cache behavior follows the serving operator prefix reuse.
+# Docs: https://blueclaw.network/how-it-works.html
 name = "Blue Claw"
 npm = "@ai-sdk/openai-compatible"
 api = "https://openai.blueclaw.network/v1"
